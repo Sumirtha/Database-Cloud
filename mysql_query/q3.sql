@@ -1,0 +1,9 @@
+CREATE TABLE Books (
+book_id INT PRIMARY KEY,
+book_name VARCHAR(255) NOT NULL,
+publisher VARCHAR(255) NOT NULL,
+year INT NOT NULL,
+ISBN INT NOT NULL
+);
+
+Desc Books;

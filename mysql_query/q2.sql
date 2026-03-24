@@ -1,0 +1,3 @@
+CREATE DATABASE library;
+SHOW DATABASES;
+USE library;

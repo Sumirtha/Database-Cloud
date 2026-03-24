@@ -1,0 +1,9 @@
+CREATE TABLE Students (
+student_id VARCHAR(50) PRIMARY KEY,
+student_name VARCHAR(50) NOT NULL,
+department VARCHAR(50) NOT NULL,
+email VARCHAR(50) NOT NULL,
+DOB VARCHAR(20) NOT NULL
+);
+
+Desc Students;
