@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Form</title>
+	<link rel="stylesheet" type="text/css" href="/home/ibab/dd&cc/mystyle.css">
+	 <script src="/home/ibab/dd&cc/script1.js"></script>
+	<link rel="script" type="script" href="/home/ibab/dd&cc/script1.js">
+</head>
+<body>
+<h2>User Registration for ML in Biology</h2>
+<form onsubmit="return validateForm()">
+<fieldset>
+	<label>Name:</label>
+	<input type="text" id="name">
+
+<label>	Email:</label>
+<input type="text" id="email">
+<br></br>
+<label>Date of birth</label>
+<input type="Date" id="dob" >
+<br></br>
+<label>password</label>
+<input type="password" name="password" id="password" required>
+<br></br>
+<label>confirm password</label>
+<input type="password" name="confirm_password" id="confirm_password"required>
+<br></br>
+<label>Category:</label>
+<input type="radio" name="Category" id="student" onclick="toggleSalary()" value="student">Student
+<input type="radio" id="professional" name="category" onclick="toggleSalary()" value="professional">Professional
+<input type="radio" id="others" name="category" value="other">Other
+<br></br>
+<label>place:</label>
+<select name="country" id="country">
+	<option>Tamilnadu</option>
+	<option>Kerala</option>
+	<option>Karnataka</option>
+	<option>Andhra Pradesh</option>
+</select>
+<label>comments:</label><br>
+<textarea id="comments" rows="4" cols="40"
+placeholder="any questions?"></textarea><br></br>
+<label>
+	<input type="checkbox" id="terms" required>
+	i agree
+</label>
+<br></br>
+<button type="submit">register</button>
+<button type="reset">reset form</button>
+</fieldset>
+</form>
+</body>
+</html>
