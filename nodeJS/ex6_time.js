@@ -1,0 +1,3 @@
+const now = new Date();
+console.log("Date: " + now.toLocaleDateString());
+console.log("Time: " + now.toLocaleTimeString());
