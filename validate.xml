@@ -1,0 +1,13 @@
+from lxml import etree
+xmlfile = etree.parse('books.xml')
+xsdfile = etree.parse('books.xsd')
+
+
+schema = etree.XMLSchema(xmlfile)
+validation=schema.validate(xmlfile)
+
+if validation == False:
+    print("XML schema validation failed")
+else:
+    print("XML schema validated")
+    exit(1)
